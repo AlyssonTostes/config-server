@@ -1,0 +1,15 @@
+application.ymlspring:
+  application:
+    name: greeting-service
+  cloud:
+    config:
+      enabled: false
+greeting-service:
+  greeting: "Ciao"
+  default-value: "Mondo"
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
